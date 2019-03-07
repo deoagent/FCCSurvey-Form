@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+</head>
+<h1 id="title">IT Customer Service Survey</h1>
+<div id="form-outer">
+    <p id="description">
+        Let us know how we can improve our services
+    </p>
+    <form id="survey-form" method="GET" action="">
+        <div class="rowTab">
+            <div class="labels">
+                <label id="name-label" for="name">* Name: </label>
+            </div>
+            <div class="rightTab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label id="email-label" for="email">* Email: </label>
+            </div>
+            <div class="rightTab">
+                <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label id="number-label" for="age">* Age: </label>
+            </div>
+            <div class="rightTab">
+                <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="currentPos">Which option best describes your current role?</label>
+            </div>
+            <div class="rightTab">
+                <select id="dropdown" name="currentPos" class="dropdown">
+      <option >Select an option</option>
+      <option  value="student">Manager</option>
+      <option value="job">Client</option>
+      <option value="learner">Employee</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="userRating">I am able to download documents faster than before the network upgrades were done.</label>
+            </div>
+            <div class="rightTab">
+                <ul style="list-style: none;">
+                    <li class="radio"><label>Yes<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>No<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rowTab">
+            <div class="labels">
+                <label for="userRating">My system operates more smoothly since these network upgrades were completed.</label>
+            </div>
+            <div class="rightTab">
+                <ul style="list-style: none;">
+                    <li class="radio"><label>Yes<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>No<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rowTab">
+            <div class="labels">
+                <label for="userRating">My work is made easier by the services provided by IT Solutions Inc.</label>
+            </div>
+            <div class="rightTab">
+                <ul style="list-style: none;">
+                    <li class="radio"><label>Yes<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>No<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rowTab">
+            <div class="labels">
+                <label for="userRating">IT Solutions workers were respectful of my personal space.</label>
+            </div>
+            <div class="rightTab">
+                <ul style="list-style: none;">
+                    <li class="radio"><label>Yes<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>No<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rowTab">
+            <div class="labels">
+                <label for="userRating">I would recommend other companies use IT Solutions for all their information technology needs.</label>
+            </div>
+            <div class="rightTab">
+                <ul style="list-style: none;">
+                    <li class="radio"><label>Yes<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>No<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rowTab">
+            <div class="labels">
+                <label for="most-like">How did our network upgrades affect your ability to provide service to your own customers?: </label>
+            </div>
+            <div class="rightTab">
+                <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="challenges">Excelent</option>
+      <option value="projects">Very Good</option>
+      <option value="community">Good</option>
+      <option value="openSource">Bad</option>
+    </select>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+            </div>
+            <div class="rightTab">
+                <ul id="preferences" style="list-style: none;">
+                    <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Network</label></li>
+                    <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Software</li>
+                    <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Documentation</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Security</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Functionality</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Availability</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Response</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Communication</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Training</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Information</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Overall Services</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="comments">Did you experience any data loss? If so, has an effort been made to recover this data?</label>
+            </div>
+            <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+
+        <div class="rowTab">
+            <div class="labels">
+                <label for="comments">Were any bugs in the system addressed before the technicians began working? If so, what were these issues and what steps were taken to resolve them?</label>
+            </div>
+            <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+
+        <div class="rowTab">
+            <div class="labels">
+                <label for="comments">Was your work affected while the upgrades were taking place? Did you find the work we performed to be disruptive in any way? If so, please state how.</label>
+            </div>
+            <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+
+        <div class="rowTab">
+            <div class="labels">
+                <label for="comments">Are there any aspects of the new system that should have been explained to you more thoroughly? If so, which ones?</label>
+            </div>
+            <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+
+        <div class="rowTab">
+            <div class="labels">
+                <label for="comments">Did our technicians take time to answer any questions you may have had or explain relevant changes to you? Which representatives were especially helpful in providing you with information?</label>
+            </div>
+            <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+
+        <div class="rowTab">
+            <div class="labels">
+                <label for="comments">Have there been any specific problems that needed to be addressed after the upgrade took place? If so, what were these issues, and were they resolved to your satisfaction?</label>
+            </div>
+            <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+
+        <div class="rowTab">
+            <div class="labels">
+                <label for="comments">Are there any other comments you would like to give that would help us improve our service in the future?</label>
+            </div>
+            <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</div>
